@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delon Health - Medical Billing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .top-bar {
+      background-color: #001640;
+      color: white;
+      font-size: 0.9rem;
+    }
+    .brand-logo {
+      height: 50px;
+      width: 100px;
+    }
+    .main-heading {
+      color: #2271B6;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  .image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .gold-stripe {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 274px;
+    width: 100%;
+    background-color: #d4af37;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .image-container {
+    position: relative;
+    z-index: 2;
+  }
+  .image-container img {
+  width: 100%;
+  max-width: 940px;
+  height: 529px;
+  display: block;
+  border-radius: 20px;
+  top: 295px;
+}
+    .consult-btn {
+  display: flex;
+  align-items: center; 
+  justify-content: center;     
+  margin: 2rem auto;
+  width: 244px;
+  height: 48px;
+  font-size: 16px; 
+  background-color: #2271B6; 
+  color: white;          
+}
+     body {
+      font-family: 'Avenir', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      background-color: white;
+    }
+
+    .section-title {
+      color: #0d6efd;
+      font-weight: 700;
+    }
+
+    .accordion-button:not(.collapsed) {
+      background-color: #e7f1ff;
+      color: #0d6efd;
+    }
+
+    .accordion-item {
+      border: 1px solid #dee2e6;
+      border-radius: 0.375rem;
+      margin-bottom: 0.75rem;
+    }
+    .accordion-button {
+      font-size: 22px;
+    }
+    .icon-box i {
+      font-size: 2rem;
+      color: #0d6efd;
+    }
+
+    .icon-box p {
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      border-radius: 0.375rem;
+      border: 1px solid #ced4da;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+    }
+
+    footer a {
+      color: #adb5bd;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+    }
+
+    .img-fluid {
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      height: 555px;
+    }
+    .why-choose-icon i {
+    font-size: 2rem;
+    color: #0dcaf0; 
+  }
+  .why-choose-icon {
+    font-size: 22px;
+  }
+    .bg-dark .icon-box i {
+      color: white;
+    }
+
+    .bg-primary h4 {
+      font-size: 1.75rem;
+      font-weight: 700;
+    }
+    .bg-dark-blue {
+        background-color: #001f3f;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar py-2 text-center">
+    <div class="container d-flex justify-content-between" style="font-family:  'Avenir', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+      <div style="font-size: 14px;">1-508-455-0015 | info@delonhealth.com</div>
+      <div style="font-size: 14px;">45 Dan Road, Suite 125 Canton, MA 02021 United States</div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="height: 80px;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Delon Health" class="brand-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="font-size: 16px;"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Heading -->
+  <h2 class="main-heading" style="font-size: 48px;">Medical Billing. Bigger Earnings!</h2>
+
+  <!-- image Section -->
+  <div class="image-wrapper">
+  <div class="gold-stripe"></div>
+  <div class="image-container">
+    <img src="C:\Users\delon\Downloads\image.png" title="Medical Billing Video" allowfullscreen>
+  </div>
+</div>
+
+
+  <!-- Consultation Button -->
+        <a href="#" class="btn consult-btn" >Request a Free Consultation</a>  
+  <!-- Grid Content-->
+   <div class="container text-center">
+      <div class="row">
+        <div class="col" style="background-color: #2271B6; border-radius: 10px;margin: 12px; height: 165px; width: 304px;">
+          <i class="bi bi-archive-fill fs-2 text-info d-block mb-2"></i>
+          <p class="fs-5" style="color: white; margin: 0;font-weight: bold;font-size: 18px;">Specialty Focused</p>
+          <p class="fs-5" style="color: white; margin: 0; font-size: 14px;">Expert Billing tailored for 8 specialties.</p>
+       </div>
+       <div class="col" style="background-color: #2271B6; border-radius: 15px; margin: 12px; height: 165px; width: 304px;">
+         <i class="bi bi-cash-stack fs-2 text-info d-block mb-2"></i>
+         <p class="fs-5" style="color: white; margin: 0; font-weight: bold;font-size: 18px;">Faster Payments</p>
+         <p class="fs-5" style="color: white; margin: 0; font-size: 14px;">Reduced denials and optimized cash flow.</p>
+       </div>
+       <div class="col" style="background-color: #2271B6; border-radius: 15px; margin: 12px; height: 165px; width: 304px;">
+         <i class="bi bi-chat-square-dots-fill fs-2 text-info d-block mb-2"></i>
+         <p class="fs-5" style="color: white; margin: 0; font-weight: bold;font-size: 18px;">US-Based Support</p>
+         <p class="fs-5" style="color: white; margin: 0; font-size: 14px;">Speak to real people, not robots.</p>
+       </div>
+       <div class="col" style="background-color: #2271B6; border-radius: 15px; margin: 12px; height: 165px; width: 304px;">
+         <i class="bi bi-bookmark-check-fill fs-2 text-info d-block mb-2"></i>
+         <p class="fs-5" style="color: white; margin: 0; font-weight: bold;font-size: 18px;">Specialty Focused</p>
+         <p class="fs-5" style="color: white; margin: 0; font-size: 14px;">Expert Billing tailored for 8 specialties.</p>
+       </div>
+     </div>
+   </div>
+  <!-- Medical Billing Services -->
+<div class="container my-5">
+  <h3 class="text-center fw-bold mb-4" style="font-size: 34px; color: #2271B6; padding-bottom: 40px;">Our Medical Billing Services</h3>
+  <div class="row">
+    <div class="col-md-6 text-center mb-4">
+      <img src="AdvertPicture2.png" alt="Medical Billing Services" class="img-fluid rounded">
+    </div>
+    <div class="col-md-6">
+      <div class="accordion" id="servicesAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Mental Health Billing
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Pedorthic Billing
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Dietician Billing
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              independent Nurse Practioner Billing
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Women's Health Nurse Practitioner Billing
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ABA Therapists Medical Billing
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              Functional Medicine Medical Billing
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Speech Therapist Medical Billing
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#servicesAccordion">
+            <div class="accordion-body">
+              ###
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Why Choose Us -->
+<div class="bg-dark text-white py-5">
+  <div class="container">
+    <h3 class="text-center mb-5 fw-bold" style="font-size: 34px;">Why Choose Us</h3>
+
+    <div class="row align-items-center">
+      <!-- Left Side Icons -->
+      <div class="col-md-4 text-center">
+        <div class="why-choose-icon mb-5">
+          <i class="bi bi-people d-block mb-2"></i>
+          <p>Specialty-Focused Billing Teams</p>
+        </div>
+        <div class="why-choose-icon mb-5">
+          <i class="bi bi-headset d-block mb-2"></i>
+          <p>24/7 Client Support</p>
+        </div>
+      </div>
+
+      <!-- Center Image -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="why choose us.png" alt="Why Choose Us" class="img-fluid rounded shadow" style="width: 445px; height: 457px;">
+      </div>
+
+      <!-- Right Side Icons -->
+      <div class="col-md-4 text-center">
+        <div class="why-choose-icon mb-5">
+          <i class="bi bi-person-check d-block mb-2"></i>
+          <p>Personalized Billing Support</p>
+        </div>
+        <div class="why-choose-icon mb-5">
+          <i class="bi bi-arrow-down-circle d-block mb-2"></i>
+          <p>Reduced Denial Rates</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+        <i class="bi bi-currency-exchange fs-2 text-info d-block mb-2"></i>
+        <p class="fs-5">Affordable Pricing with No Hidden Fees</p>
+     </div>  
+  </div>
+</div>
+<!-- FAQ Section -->
+<div class="container py-5">
+  <h3 class="text-center fw-bold mb-4" style="font-size: 34px; color: #2271B6;">Frequently Asked Questions</h3>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq1" aria-expanded="false" aria-controls="collapseFaq1">
+          What types of providers does DelonHealth serve?
+        </button>
+      </h2>
+      <div id="collapseFaq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             We specialize in medical billing for independent practitioners and small clinics including Mental Health professionals, Dieticians, Functional Medicine providers, Speech Therapists, ABA Therapists, Pedorthists, and Nurse Practitioners (NPs and WHNPs) across Massachusetts and other U.S. states.        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq2" aria-expanded="false" aria-controls="collapseFaq2">
+          Do I need to use a specific EHR or software to work with DelonHealth?
+        </button>
+      </h2>
+      <div id="collapseFaq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq3" aria-expanded="false" aria-controls="collapseFaq3">
+          How quickly are claims submitted?
+        </button>
+      </h2>
+      <div id="collapseFaq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq4" aria-expanded="false" aria-controls="collapseFaq4">
+          What payers do you work with?
+        </button>
+      </h2>
+      <div id="collapseFaq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq5" aria-expanded="false" aria-controls="collapseFaq5">
+          Can you help with denied or underpaid claims?
+        </button>
+      </h2>
+      <div id="collapseFaq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq6">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq6" aria-expanded="false" aria-controls="collapseFaq6">
+          What if I offer telehealth services?
+        </button>
+      </h2>
+      <div id="collapseFaq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq7" aria-expanded="false" aria-controls="collapseFaq7">
+          How do you charge for your billing services?
+        </button>
+      </h2>
+      <div id="collapseFaq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq8">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq8" aria-expanded="false" aria-controls="collapseFaq8">
+          Can you verify insurance and handle authorizations?
+        </button>
+      </h2>
+      <div id="collapseFaq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq9">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq9" aria-expanded="false" aria-controls="collapseFaq9">
+          Do you offer reports or insights into my financial performance?
+        </button>
+      </h2>
+      <div id="collapseFaq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq10">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFaq10" aria-expanded="false" aria-controls="collapseFaq10">
+          How do I get started with DelonHealth?
+        </button>
+      </h2>
+      <div id="collapseFaq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+             ### </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<section class="bg-dark-blue text-white py-5">
+  <div class="container">
+     <h2 class="text-center mb-4" style="font-size: 34px;">Boost your cashflow. Let's talk.</h2>
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+  <form>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label class="form-label">Your Name (Required)</label>
+        <input type="text" class="form-control" placeholder="Your Full Name" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Email Address (Required)</label>
+        <input type="email" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Phone Number (Optional)</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Practice or Business Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="col-12">
+        <label class="form-label">Message (Required)</label>
+        <textarea class="form-control" rows="4" required></textarea>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+      <button class="btn btn-primary px-4 mb-5">Schedule a Call</button>
+    </div>
+  </form>
+</div>
+
+<!-- Footer -->
+ <hr style="border: none; height: 4px; background-color: white; width: 100%; margin: 0;">
+
+<footer class="bg-dark-blue text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+      <!-- Contact Info -->
+      <div class="col-md-6 mb-4">
+        <h5 class="text-warning">Contact Us</h5>
+        <p>45 Dan Road, Suite 125<br>Canton, MA 02021<br>United States</p>
+        <p><i class="bi bi-envelope"></i> info@delonhealth.com</p>
+        <p><i class="bi bi-telephone"></i> 1-508-455-0015</p>
+        <p><i class="bi bi-printer"></i> 1-508-455-0095</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-3 mb-4">
+        <h5 class="text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#" class="text-white text-decoration-none">About</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="col-md-3 d-flex align-items-start justify-content-md-end">
+        <div>
+          <h5 class="text-warning">Follow Us</h5>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4 me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom copyright -->
+    <div class="row mt-4 pt-3 border-top">
+      <div class="col-md-6">
+        <p class="mb-0">&copy; 2025 DelonHealth. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
